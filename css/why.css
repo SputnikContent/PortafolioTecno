@@ -1,0 +1,73 @@
+.why-section {
+    padding: 5rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.why-container {
+    text-align: left;
+    transition: opacity 0.5s ease-out; /* Añadimos la transición */
+}
+
+.why-container h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.why-container p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.why-container strong {
+    color: var(--secondary-color);
+}
+
+.quote {
+    font-style: italic;
+    color: var(--primary-color);
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
+
+.quote cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    text-align: right;
+    font-style: normal;
+    color: var(--text-color);
+}
+
+.benefits-section {
+    margin-top: 3rem;
+}
+
+.benefits-section h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.benefits-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits-section li {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.benefits-section li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}

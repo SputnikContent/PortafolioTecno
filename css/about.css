@@ -1,0 +1,45 @@
+.about-section {
+    padding: 5rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-container h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.about-container p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.about-container strong {
+    color: var(--secondary-color);
+}
+
+.about-image-placeholder {
+    margin: 2rem auto;
+    max-width: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.vision-section {
+    margin-top: 4rem;
+}
+
+.vision-section h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}

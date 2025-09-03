@@ -1,0 +1,98 @@
+/* Estilos del modal de chat */
+.chat-modal {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 350px;
+    height: 500px;
+    background-color: var(--dark-text-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* Estado activo del modal */
+.chat-modal.active {
+    display: flex;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--dark-text-color);
+    padding: 1rem;
+}
+
+.chat-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.close-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.chat-body {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.chat-body .message {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    max-width: 80%;
+    line-height: 1.4;
+}
+
+.chat-body .message.bot {
+    background-color: var(--secondary-color);
+    color: var(--dark-text-color);
+    align-self: flex-start;
+}
+
+.chat-body .message.user {
+    background-color: #6a6a6a;
+    color: var(--text-color);
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.chat-input {
+    display: flex;
+    padding: 1rem;
+    border-top: 1px solid #333;
+}
+
+.chat-input input {
+    flex-grow: 1;
+    border: none;
+    background-color: #333;
+    color: var(--text-color);
+    padding: 0.75rem;
+    border-radius: 50px;
+    margin-right: 0.5rem;
+}
+
+.chat-input input:focus {
+    outline: none;
+}
+
+.send-btn {
+    background-color: var(--primary-color);
+    color: var(--dark-text-color);
+    border: none;
+    border-radius: 50px;
+    padding: 0.5rem 1.25rem;
+    cursor: pointer;
+    font-weight: bold;
+}
